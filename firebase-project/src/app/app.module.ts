@@ -13,6 +13,8 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/switchMap';
 
+import {QuestionsService} from "./shared/model/questions.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,7 @@ import 'rxjs/add/operator/switchMap';
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
-  providers: [AngularFireDatabase],
+  providers: [AngularFireDatabase, QuestionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
